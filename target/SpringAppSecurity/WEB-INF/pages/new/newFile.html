@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<title>Target File Manager</title>
+
+</head>
+<body>
+	<h2>Target File Manager</h2>
+	<form id="targetFile" action="showFiles" method="post">
+	
+		<table>
+			<tr>
+				<td><label for="report.systemRelease.system.id">System Name</label></td>
+				<td><select id="systemId" name="report.systemRelease.system.id" required="required">
+						<option value="">-- Select system</option>
+						<option value="7">Apache Lucene</option><option value="8">Hibernate</option><option value="9">Apache Derby</option><option value="10">Netbeans - Editor</option><option value="11">OpenJPA</option><option value="12">Apache Cocoon</option><option value="49">PowerPoint</option>
+					</select> <a href="newSystem.html"> Add new system</a></td>
+
+			</tr>
+			<tr>
+				<td><label for="report.systemRelease.id">Release Name</label></td>
+				<td><select id="systemReleaseId" name="report.systemRelease.id" required="required">
+						<option value="">-- Select release</option>
+					</select> <a href="newRelease.html"> Add new system release</a></td>
+			</tr>
+			<tr>
+				<td><label for="report.id">Report Id</label></td>
+				<td><select id="reportId" name="report.id" required="required">
+						<option value="">-- Select report</option>
+					</select> <a href="newReport.html"> Add new report</a></td>
+			</tr>
+			<tr>
+				<td><label for="path">File Path</label></td>
+				<td><textarea id="path" name="path" required="required"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="revision.id">Revision</label></td>
+				<td><select id="revisionId" name="revision.id" required="required">
+						<option value="">-- Select revision</option>
+					</select> <a href="../revision/newRevision"> Add new revision</a></td>
+			</tr>
+			<tr>
+				<td><label for="changeType.id">Change Type</label></td>
+				<td><select id="changeType.id" name="changeType.id" required="required">
+						<option value="1">Added</option><option value="2">Modified</option><option value="3">Deleted</option>
+					</select></td>
+
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Add Target File" /></td>
+			</tr>
+		</table>
+
+	</form>
+
+</body>
+</html>

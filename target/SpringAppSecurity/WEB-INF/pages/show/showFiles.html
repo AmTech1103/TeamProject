@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<title>Target Change Manager</title>
+<link rel="stylesheet" type="text/css" href="errors.css" />
+
+</head>
+<body>
+	<h2>Target Change Manager</h2>
+	<form id="targetChange" action="showChanges" method="post">
+	
+		<table>
+			<tr>
+				<td><label for="targetFile.report.systemRelease.system.id">System Name</label></td>
+				<td><select id="systemId" name="targetFile.report.systemRelease.system.id" required="required">
+						<option value="">-- Select system</option>
+						<option value="7">Apache Lucene</option><option value="8">Hibernate</option><option value="9">Apache Derby</option><option value="10">Netbeans - Editor</option><option value="11">OpenJPA</option><option value="12">Apache Cocoon</option><option value="49">PowerPoint</option>
+					</select> <a href="newSystem.html"> Add new system</a></td>
+
+			</tr>
+			<tr>
+				<td><label for="targetFile.report.systemRelease.id">Release Name</label></td>
+				<td><select id="systemReleaseId" name="targetFile.report.systemRelease.id" required="required">
+						<option value="">-- Select release</option>
+					</select> <a href="newRelease.html"> Add new system release</a></td>
+			</tr>
+			<tr>
+				<td><label for="targetFile.report.id">Report Id</label></td>
+				<td><select id="reportId" name="targetFile.report.id" required="required">
+						<option value="">-- Select report</option>
+					</select> <a href="newReport.html"> Add new report</a></td>
+			</tr>
+			<tr>
+				<td><label for="targetFile.id">File Path</label></td>
+				<td><select id="targetFileId" name="targetFile.id" required="required">
+						<option value="">-- Select target file</option>
+					</select> <a href="newFile.html"> Add new report</a></td>
+			</tr>
+			<tr>
+				<td><label for="codeArtifact">Granularity</label></td>
+				<td><select id="codeArtifact" name="codeArtifact" required="required">
+						<option value="false" selected="selected">Method</option>
+						<option value="true">Class</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td><label for="qualifiedName">Qualified name</label></td>
+				<td><textarea id="qualifiedName" name="qualifiedName" required="required"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="changeType.id">Change Type</label></td>
+				<td><select id="changeType.id" name="changeType.id" required="required">
+						<option value="1">Added</option><option value="2">Modified</option><option value="3">Deleted</option>
+					</select></td>
+
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Add Target Change" /></td>
+			</tr>
+		</table>
+
+	</form>
+
+</body>
+</html>
