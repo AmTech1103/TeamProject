@@ -1,15 +1,30 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%--
+  Created by IntelliJ IDEA.
+  User: Matt
+  Date: 10/1/13
+  Time: 11:48 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>SEVERE Issues</title>
 </head>
 <body>
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
 <h2>SEVERE Issues</h2>
 <ul>
     <li>Systems
         <ul>
-            <li><a href="newSystem.html">Add new system</a></li>
+            <li><a href="pages/new/newSystem.html">Add new system</a></li>
             <li><a href="showSystems.html">Show systems</a></li>
         </ul>
     </li>
@@ -46,3 +61,24 @@
 </ul>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
